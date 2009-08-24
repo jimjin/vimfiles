@@ -11,7 +11,16 @@ git submodule update
 </code></pre>
 
 Put this in your vimrc along with your personal hacks:
+
+h2. Linux
+
 <pre><code>
-source ~/.vim/vimrc      "linux
+source ~/.vim/vimrc
+source ~/.vim/agi-vimrc
+</code></pre>
+
+h2. Windows
+
+<pre><code>
 source ~/vimfiles/vimrc  "windows
 </code></pre>
