@@ -1,0 +1,8 @@
+map <F5> :!git status > d.diff <CR> :!git diff --cached >> d.diff <CR> :sp d.diff <CR><C-w>_
+map <F7> :up <CR> :!ruby -Itest % > t.log <CR> :sp t.log <CR><C-w>_
+imap <C-l> =>
+imap <C-k> <%- -%>
+map <F12> :Gist 166924 <CR>
+imap <F12> :Gist 166924 <CR>
+
+autocmd BufReadPost * if line("'\"") && line("'\"") <= line("$") | exe "normal `\"" | endif
